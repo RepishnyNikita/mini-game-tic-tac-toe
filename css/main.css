@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #9038ba 0%, #722a94 100%);
+}
+
+.players {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #d9d6d6;
+}
+
+.players > span {
+  font-size: 60px;
+}
+
+.field {
+  border: 10px solid #d9d6d6;
+  border-radius: 35px;
+  background-color: #d9d6d6;
+  box-shadow: 6px 5px 5px #615151;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+}
+
+.cell {
+  padding: 20px;
+  font-size: 50px;
+  color: #d9d6d6;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+  border: none;
+  background-color: #9038ba;
+}
+
+.circle {
+  font-size: 100px;
+  color: aqua;
+}
+
+.cross {
+  font-size: 100px;
+  color: rgb(255, 0, 195);
+}
+
+.winner {
+  background-color: #ba48bd;
+}
+
+.block-winner {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.winner-text {
+  font-size: 25px;
+  color: #d9d6d6;
+}
+
+.new__game {
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  color: #d9d6d6;
+
+  background-color: #ad89be;
+  cursor: pointer;
+}
+
+.new__game:hover {
+  background-color: aqua;
+}
